@@ -1,0 +1,205 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Times New Roman", Times;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+header {
+	background-color: #000;
+	color: #fff;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+
+
+.menubar {
+	flex: 5;
+}
+
+.menubar ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-center;
+	list-style: none;
+}
+
+.menubar li {
+	margin-right: 1rem;
+}
+
+.menubar li a {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.menubar li a:hover {
+	color: #f8c84a;
+}
+
+.aboutme-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 4rem 0;
+}
+
+.aboutme-image {
+	flex: 0.4;
+	margin: 0 3rem;
+}
+
+.aboutme-image img {
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+.aboutme-content {
+	flex: 2;
+	margin: 0 2rem;
+}
+
+
+.experience-container {
+	padding: 4rem 0;
+}
+
+
+.experience-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: calc(33.33% - 10px); 
+}
+
+
+
+.experience-card {
+	flex: 1;
+	margin: 1rem;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+}
+
+
+.experience-card img {
+	max-width: 100%;
+}
+
+
+.review-slider {
+	background-color: #000;
+	color: #fff;
+	padding: 4rem 0;
+}
+
+.slider {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+}
+
+.slide {
+	flex: 1;
+	min-width: 500px;
+	scroll-snap-align: start;
+	padding: 0 2rem;
+}
+
+.education {
+	margin: 0 2rem;
+}
+
+
+.edu {
+	display: flex;
+	align-items: center;
+}
+
+.edu img {
+	max-width: 50px;
+	margin-right: 1rem;
+	border-radius: 50%;
+}
+
+.edu h4 {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+.edu p {
+	margin-left: 1rem;
+	font-style: italic;
+}
+
+.footer-cont {
+	background-color: #333;
+	color: #fff;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+.footer-cont p {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+	.aboutme-container {
+		flex-direction: column;
+	}
+	
+	.aboutme-image {
+		margin: 2rem 0;
+	}
+	
+	.aboutme-content {
+		margin: 2rem 0;
+	}
+	
+	.experience-cards {
+		flex-direction: column;
+	}
+	
+	.experience-card {
+		margin: 2rem 0;
+	}
+	
+	.slider {
+		scroll-snap-type: none;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	
+	.slide {
+		min-width: auto;
+	}
+}

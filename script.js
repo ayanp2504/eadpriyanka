@@ -52,7 +52,7 @@ videoContainer.addEventListener('click', () => {
 const learnMoreButton = document.querySelector('.learn-more-button');
 
 learnMoreButton.addEventListener('click', () => {
-    window.location.href = 'C:/Users/prane2/Desktop/ead hw/video-page.html';
+    window.location.href = './video-page.html';
 });
 
 
